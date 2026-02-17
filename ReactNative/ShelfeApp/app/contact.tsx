@@ -5,11 +5,6 @@ export default function Contact() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Contact</Text>
-
-      <Link href="/" style={styles.link}>
-        {' '}
-        Back Home
-      </Link>
     </View>
   );
 }
