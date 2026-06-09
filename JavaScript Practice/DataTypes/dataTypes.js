@@ -1,14 +1,14 @@
 // Number
 
 let n = 10;
-console.log(n)
+console.log(n);
 
-n = 10.20
-console.log(n)
+n = 10.2;
+console.log(n);
 
 // String
 
-let firstName = "Manish";
+let firstName = 'Manish';
 console.log(firstName);
 
 let lastName = 'Ahire';
@@ -17,7 +17,7 @@ console.log(lastName);
 let fullName = `My Full Name is ${firstName} ${lastName}`;
 console.log(fullName);
 
-// Boolean 
+// Boolean
 
 let isCorrect = true;
 console.log(isCorrect);
