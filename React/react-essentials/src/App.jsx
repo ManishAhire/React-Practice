@@ -2,21 +2,13 @@ import { CORE_CONCEPTS } from './data.js';
 import Header from './components/Header/Header.jsx';
 import CoreConcepts from './components/CoreConcepts.jsx';
 import TabButton from './components/TabButton.jsx';
+import { useState } from 'react';
 
 function App() {
+  const [tabContent, setTabContent] = useState('Please click a button above');
+
   function handleSelect(selectedButton) {
-    // selectedButton => 'components', 'JSX' ...
-
-    console.log('Button Pressed: ' + selectedButton);
-
-    switch (selectedButton) {
-      case 'components':
-        console.log('Components');
-        break;
-
-      default:
-        break;
-    }
+    setTabContent(selectedButton);
   }
   return (
     <div>
@@ -46,6 +38,7 @@ function App() {
             <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
           </menu>
+          {tabContent}
         </section>
       </main>
     </div>
