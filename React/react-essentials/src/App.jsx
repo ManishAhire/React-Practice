@@ -1,6 +1,6 @@
 import { CORE_CONCEPTS, EXAMPLES } from './data.js';
 import Header from './components/Header/Header.jsx';
-import CoreConcepts from './components/CoreConcepts.jsx';
+import CoreConcept from './components/CoreConcept.jsx';
 import TabButton from './components/TabButton.jsx';
 import { useState } from 'react';
 
@@ -12,6 +12,7 @@ function App() {
   }
   return (
     // No need to add extra div, instead use <Fragment> element, shorter version is <>...</>
+    // Fragment help you to avoid unnecessary HTML elements
     <>
       <Header />
       <main>
@@ -27,7 +28,7 @@ function App() {
             ))} */}
 
             {CORE_CONCEPTS.map((item) => (
-              <CoreConcepts key={item.title} {...item} />
+              <CoreConcept key={item.title} {...item} />
             ))}
           </ul>
         </section>

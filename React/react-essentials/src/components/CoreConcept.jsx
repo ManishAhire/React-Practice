@@ -1,4 +1,4 @@
-// function CoreConcepts(props) {
+// function CoreConcept(props) {
 //   return (
 //     <li>
 //       <img src={props.image} alt={props.title} />
@@ -9,7 +9,7 @@
 // }
 
 // ALTERNATIVE TO ABOVE FUNCTION - Destructuring the props
-function CoreConcepts({ image, title, description }) {
+function CoreConcept({ image, title, description }) {
   return (
     <li>
       <img src={image} alt={title} />
@@ -19,4 +19,4 @@ function CoreConcepts({ image, title, description }) {
   );
 }
 
-export default CoreConcepts;
+export default CoreConcept;
