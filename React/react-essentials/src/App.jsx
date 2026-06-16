@@ -11,7 +11,8 @@ function App() {
     setTabContent(selectedButton);
   }
   return (
-    <div>
+    // No need to add extra div, instead use <Fragment> element, shorter version is <>...</>
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -72,7 +73,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
